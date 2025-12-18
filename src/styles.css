@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-primary: #1B8354;
+  --color-primary-hover: #063d25;
+  --color-primary-dark: #074D31;
+  --color-secondary: #D2D6DB;
+
+  --color-bg-light: #FFFFFF;
+  --color-bg-dark: #092A1ECC;
+
+  --color-text-dark: #161616;
+  --color-text-display: #1F2A37;
+  --color-text-light: #FFFFFF;
+
+  --color-border: #D2D6DB;
+}
+
+/* Anemations */
+
+@keyframes up {
+  0%,100% { transform: translateY(80%); }
+  100% { transform: translateY(0px);}
+}
+
+
+@layer components {
+
+* {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+
+.hero-section {
+  @apply     
+  relative
+  flex flex-col justify-center 
+  w-full 
+  min-h-[60vh]
+  sm:min-h-[70vh]
+  md:min-h-[80vh]
+  lg:min-h-[90]
+  flex-none order-3 self-stretch grow-0   
+
+    px-4
+    sm:px-8
+    md:px-16
+    lg:px-20 
+
+    py-10
+    sm:py-16
+    md:py-20
+
+    bg-no-repeat
+    bg-center
+    bg-cover;
+}
+
+.ng-btn {
+@apply     
+    flex flex-row justify-center items-center px-4 gap-1   min-w-22.75 h-10 min-h-10 max-h-10 
+    bg-primary rounded flex-none order-0 grow-0 text-text-light leading-6  cursor-pointer;
+}
+
+.ng-btn-outline { 
+@apply  min-w-22.75 h-10 min-h-10 max-h-10 text-text-dark text-sm border-border border  px-4 rounded    
+cursor-pointer  transition duration-200 text-[16px] font-medium 
+flex flex-row justify-center items-center box-border
+flex-none order-1 grow-0; 
+}
+
+
+.cards-container {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-6 
+         order-1 self-stretch grow-0 w-full;
+}
+
+.card {
+  @apply box-border flex flex-col p-4 gap-5
+         w-full sm:w-75 md:w-[320px] lg:w-87.5 xl:w-92.5 2xl:w-92.5
+        min-h-87.5 bg-bg-light border border-border rounded-2xl 
+        flex-none order-0 grow;
+}
+
+
+.small-card {
+  @apply box-border flex flex-col  justify-evenly  p-4 gap-4 
+   w-full  sm:w-62.5 md:w-70 lg:w-75   min-w-100  min-h-55
+  bg-bg-light  border border-border rounded-2xl flex-none order-0 grow-0;
+}
+
+.card-title {
+@apply text-text-display text-lg font-bold  order-0 self-stretch grow-0 
+leading-7; 
+}
+.card-text {
+  @apply   text-text-display font-medium  leading-4.5 flex-none;
+}
+
+.image-card {
+  @apply w-full h-65 
+    flex-none order-0 self-stretch grow-0 rounded-lg overflow-hidden;
+}
+
+
+.image-card-img {
+  @apply size-full object-cover;
+} 
+
+
+  /* animation styles */
+  .animate-up {
+    animation:  up 0.5s  ease-in-out;
+  }
+
+
+
+
+}
