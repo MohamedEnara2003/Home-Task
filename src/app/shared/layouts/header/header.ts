@@ -8,7 +8,7 @@ import { NavBarActions } from "../navigations/nav-bar-actions/nav-bar-actions";
   imports: [Logo, MainLinks, NavBarActions],
   template: `
   <header class="w-full h-18  flex justify-between items-center px-4   mx-auto">
-
+  <!-- Header Navigation -->
   <nav 
   aria-label="روابط التنقل الرئيسية" 
   role="navigation" 

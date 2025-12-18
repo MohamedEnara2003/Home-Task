@@ -17,8 +17,8 @@ import { ServicesSectionService } from '../service/services-section.service';
   />
   
   <ul class="cards-container">
+
   @for (item of servicesSectionService.services(); let i =$index; track item.id) {
-    
   <li [aria-label]="'الخدمة' + '-' +  (i + 1)" >
   <article [aria-label]="'الخدمة' + ' ' +  item.service" 
   role="article" class="small-card">
@@ -30,7 +30,7 @@ import { ServicesSectionService } from '../service/services-section.service';
   </span>
 
   <header class="flex flex-col gap-2">
-  <h3 class="card-title"> {{item.service}}</h3>
+  <h2 class="card-title"> {{item.service}}</h2>
   <p class="card-text"> {{item.name}}</p>
   </header>
 

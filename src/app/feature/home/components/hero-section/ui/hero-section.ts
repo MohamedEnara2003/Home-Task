@@ -3,31 +3,59 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-hero-section',
   template: `
-    <section 
-    aria-label="القسم الرئيسي"
-    class="hero-section"
-    style="background-image: linear-gradient(0deg, rgba(9,42,30,0.8), rgba(9,42,30,0.8)),
-    url('images/6010c675f7b4ad6269e420554307a5c83c72d7a5 (1).webp');"
-    >
-  
-
-<article aria-label="المستودع الرقمي"  role="article" 
-class="w-full sm-w-120 md:w-2xl flex flex-col gap-8  " >
-
-  <header class="flex flex-col gap-6 w-full text-text-light">
-    <h1 class="text-2xl sm:text-4xl md:text-[60px] leading-18 tracking-tight font-semibold">
-      المستودع الرقمي
-    </h1>
-
-    <p class="sm:text-lg md:text-xl leading-7.5 font-normal">
-      المستودع الرقمي هو منصة تقدم طريقة آمنة وفعالة لتخزين وإدارة المستندات الرقمية.
-    </p>
-  </header>
-
-<form
-  class="w-full flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6 rounded-sm"
-  role="search"
+<section
+  aria-label="القسم الرئيسي"
+  class="hero-section relative overflow-hidden"
 >
+
+  <!-- Hero image -->
+  <img
+    src="/images/hero-image.webp"
+    alt="الخلفية الرئيسية"
+    width="1700"
+    height="1080"
+    fetchpriority="high"
+    loading="eager"
+    decoding="async"
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+
+  <!-- Overlay -->
+  <div
+    class="absolute inset-0 bg-[linear-gradient(0deg,rgba(9,42,30,0.8),rgba(9,42,30,0.8))]"
+    aria-hidden="true"
+  ></div>
+
+  <!-- Content -->
+  <article
+    aria-label="المستودع الرقمي"
+    role="article"
+    class="relative z-10 w-full sm:w-120 md:w-2xl flex flex-col gap-8">
+
+    <header class="flex flex-col w-full text-text-light">
+      <h1
+        class="
+          text-3xl
+          sm:text-4xl
+          md:text-5xl
+          lg:text-6xl
+          leading-tight
+          tracking-tight
+          font-semibold
+        "
+      >
+        المستودع الرقمي
+      </h1>
+
+      <p class="text-sm sm:text-lg lg:text-xl leading-7.5 font-normal">
+        المستودع الرقمي هو منصة تقدم طريقة آمنة وفعالة لتخزين وإدارة المستندات الرقمية.
+      </p>
+    </header>
+
+    <form
+      class="w-full flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6 rounded-sm"
+      role="search"
+    >
 
 <div class="relative w-full  h-10 bg-bg-light">
 
@@ -62,22 +90,20 @@ class="w-full sm-w-120 md:w-2xl flex flex-col gap-8  " >
 
     </div>
 
-<button
-  type="submit"
-  class="flex items-center justify-center gap-1.5
-  w-full sm:w-auto h-10 px-6
-  bg-gray-100 rounded-sm text-text-dark"
-  aria-label="تنفيذ البحث في المستودع الرقمي">
-  بحث
-</button>
+      <button
+        type="submit"
+        class="flex items-center justify-center gap-1.5
+        w-full sm:w-auto h-10 px-6
+        bg-gray-100 rounded-sm text-text-dark"
+        aria-label="تنفيذ البحث في المستودع الرقمي"
+      >
+        بحث
+      </button>
 
+    </form>
+  </article>
+</section>
 
-  </form>
-
-</article>
-
-
-    </section>
   `,
 styleUrl: './hero-section.css',
 })

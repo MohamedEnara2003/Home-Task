@@ -34,12 +34,15 @@ import { LatestAdditionsService } from '../service/latest-addition.service';
     [alt]="addition.library + ' - ' + addition.type" 
     loading="lazy" 
     decoding="async" 
+    fetchpriority="high"
+    width="380"
+    height="250"
     class="image-card-img"
     />
     <figcaption class="sr-only">{{addition.title}}</figcaption>
   </figure>
 
-  <h3 class="card-title line-clamp-1">{{addition.title}}</h3>
+  <h2 class="card-title line-clamp-1">{{addition.title}}</h2>
 
   <p class="flex items-center gap-4 ">
   <span class="card-text ">{{addition.type}}</span>

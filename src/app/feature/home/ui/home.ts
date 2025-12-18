@@ -10,16 +10,20 @@ import { LatestAddition } from "../components/latest-addition/ui/latest-addition
   template: `
   <main aria-label="الصفحة الرئيسية"
   role="main" class="grid grid-cols-1  gap-5 pb-10 ">
+
   <app-hero-section />
 
-  <article class="grid grid-cols-1  gap-10 px-2 sm:px-5 md:px-10 lg:px-15 xl:px-20 ">
+  <article class="grid grid-cols-1  gap-10 px-2 sm:px-5 md:px-4 lg:px-8 xl:px-12 2xl:px-14 ">
   <app-services-section />
   <app-digital-collections />
   <app-latest-addition />
 
-    <p class="text-text-dark text-sm leading-5">
+  <section>
+  <p class="text-text-dark text-sm leading-5">
       تاريخ آخر تعديل: 19/03/2025 - 4:13 م بتوقيت السعودية
-    </p>
+  </p>
+  </section>
+
   </article>
 
   </main>

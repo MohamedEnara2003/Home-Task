@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
   selector: 'app-main-links',
   imports: [RouterModule, ],
   template: `
-  <ul class="grid grid-cols-4  gap-1" >
+  <ul class="grid grid-cols-4  gap-1 sm:gap-2" >
   @for (link of navService.mainLinks(); track link.id) {
   <li 
   >
@@ -17,7 +17,7 @@ import { RouterModule } from '@angular/router';
   routerLinkActive="text-text-light bg-primary "
   [routerLinkActiveOptions]="{exact : true}"
   [attr.aria-label]="'انتقل إلى ' + link.name"
-  class=" font-medium leading-6 text-xs sm:text-[16px]    px-2  text-text-dark 
+  class=" font-medium leading-4 text-[10px] sm:text-xs sm:text-[16px]  sm:px-2  p-1 text-text-dark 
   hover:text-white hover:bg-primary duration-400 transition-colors rounded cursor-pointer 
   flex flex-col items-center justify-center ">
 

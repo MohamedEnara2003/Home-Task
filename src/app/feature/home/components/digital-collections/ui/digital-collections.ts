@@ -16,9 +16,7 @@ class="flex flex-col gap-6">
   title="المكتبات الوقفية"
   />
 
-  <ul class="w-full cards-container 
-  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 p-2
-  order-1 self-stretch grow-0"
+  <ul class="w-full cards-container"
   aria-label="قائمة المكتبات" >
 
   @for (collection of digitalCollectionsService.collections(); let i =$index; track collection.id) {
@@ -34,13 +32,16 @@ class="flex flex-col gap-6">
     [alt]="collection.library + ' - '+ (i + 1) " 
     loading="lazy" 
     decoding="async" 
+    fetchpriority="high"
+    width="380"
+    height="250"
     class="image-card-img"
     />
     <figcaption class="sr-only">{{collection.library}}</figcaption>
   </figure>
 
-  <h3 class="card-title"> {{collection.library}} </h3>
-  <p class="card-text ">نبذة </p>
+  <h2 class="card-title"> {{collection.library}} </h2>
+  <h3 class="card-text ">نبذة </h3>
 
   <footer class="flex items-center gap-5">
     <button type="button" class="ng-btn" [aria-label]="'استعراض' + ' ' + collection.library "

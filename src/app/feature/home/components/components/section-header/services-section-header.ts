@@ -7,9 +7,9 @@ import { RouterLink } from "@angular/router";
   template: `
 
   <header aria-label="Service Section Header"
-  class="w-full flex  justify-between items-center">
+  class="w-full flex  justify-between items-center border-b border-border pb-2">
 
-  <h1 class="text-text-dark font-bold text-2xl   flex-none  self-stretch grow-0">
+  <h1 class="text-text-dark font-bold  text-xl sm:text-2xl   flex-none  self-stretch grow-0">
   {{title()}}
   </h1>
   
