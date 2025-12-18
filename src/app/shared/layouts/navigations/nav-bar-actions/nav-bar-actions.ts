@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
   role="button"
   title="البحث"
   aria-label="فتح البحث" 
-  class="cursor-pointer hover:opacity-70 duration-300 transition-opacity">
+  class="ng-btn-icon">
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" clip-rule="evenodd" d="M11 1.25C5.61522 1.25 1.25 5.61522 1.25 11C1.25 16.3848 5.61522 20.75 11 20.75C13.4224 20.75 15.6385 19.8666 17.3437 18.4043L21.4697 22.5303C21.7626 22.8232 22.2374 22.8232 22.5303 22.5303C22.8232 22.2374 22.8232 21.7626 22.5303 21.4697L18.4043 17.3437C19.8666 15.6385 20.75 13.4224 20.75 11C20.75 5.61522 16.3848 1.25 11 1.25ZM2.75 11C2.75 6.44365 6.44365 2.75 11 2.75C15.5563 2.75 19.25 6.44365 19.25 11C19.25 15.5563 15.5563 19.25 11 19.25C6.44365 19.25 2.75 15.5563 2.75 11Z" fill="#161616"/>
   </svg>
@@ -26,7 +26,7 @@ import { Component } from '@angular/core';
   role="button"
   title="اللغة"
   aria-label="تغيير اللغة"
-  class="cursor-pointer hover:opacity-70 duration-300 transition-opacity"
+  class="ng-btn-icon"
   >
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1923 12.7115C16.0758 12.4321 15.8027 12.25 15.5 12.25C15.1972 12.25 14.9241 12.4321 14.8076 12.7115L12.3076 18.7115C12.1483 19.0939 12.3291 19.533 12.7115 19.6923C13.0938 19.8516 13.5329 19.6708 13.6923 19.2885L14.3333 17.75H16.6666L17.3076 19.2885C17.467 19.6708 17.9061 19.8516 18.2884 19.6923C18.6708 19.533 18.8516 19.0939 18.6923 18.7115L16.1923 12.7115ZM15.5 14.95L16.0416 16.25H14.9583L15.5 14.95Z" fill="#161616"/>
@@ -40,7 +40,7 @@ import { Component } from '@angular/core';
   role="button"
   title="الملف الشخصي"
   aria-label="الملف الشخصي"
-  class="cursor-pointer hover:opacity-70 duration-300 transition-opacity"
+  class="ng-btn-icon"
   >
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9999 1.25C9.10038 1.25 6.74988 3.6005 6.74988 6.5C6.74988 9.39949 9.10038 11.75 11.9999 11.75C14.8994 11.75 17.2499 9.39949 17.2499 6.5C17.2499 3.6005 14.8994 1.25 11.9999 1.25ZM8.24988 6.5C8.24988 4.42893 9.92881 2.75 11.9999 2.75C14.0709 2.75 15.7499 4.42893 15.7499 6.5C15.7499 8.57107 14.0709 10.25 11.9999 10.25C9.92881 10.25 8.24988 8.57107 8.24988 6.5Z" fill="#161616"/>

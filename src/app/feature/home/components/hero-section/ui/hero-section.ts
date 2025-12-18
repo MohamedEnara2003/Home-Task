@@ -5,20 +5,34 @@ import { Component } from '@angular/core';
   template: `
 <section
   aria-label="القسم الرئيسي"
-  class="hero-section relative overflow-hidden"
+  class="hero-section "
 >
 
   <!-- Hero image -->
-  <img
-    src="/images/hero-image.webp"
-    alt="الخلفية الرئيسية"
-    width="1700"
-    height="1080"
-    fetchpriority="high"
-    loading="eager"
-    decoding="async"
-    class="absolute inset-0 w-full h-full object-cover"
-  />
+<img
+  srcset="
+    /images/hero-image/hero-image-480.webp 480w,
+    /images/hero-image/hero-image-720.webp 720w,
+    /images/hero-image/hero-image-1024.webp 1024w,
+    /images/hero-image/hero-image-1366.webp 1366w,
+    /images/hero-image/hero-image-1700.webp 1700w,
+  "
+  sizes="(max-width: 480px) 100vw,
+        (max-width: 720px) 100vw,
+        (max-width: 1024px) 100vw,
+        (max-width: 1366px) 100vw,
+        (max-width: 1600px) 100vw,
+        1700px"
+  src="/images/hero-image/hero-image-1700.webp"
+  alt="الخلفية الرئيسية"
+  width="1700"
+  height="1080"
+  fetchpriority="high"
+  loading="eager"
+  decoding="async"
+  class="absolute inset-0 w-full h-full object-cover"
+/>
+
 
   <!-- Overlay -->
   <div
@@ -32,7 +46,7 @@ import { Component } from '@angular/core';
     role="article"
     class="relative z-10 w-full sm:w-120 md:w-2xl flex flex-col gap-8">
 
-    <header class="flex flex-col w-full text-text-light">
+    <header class="flex flex-col gap-5 w-full text-text-light">
       <h1
         class="
           text-3xl
@@ -47,7 +61,7 @@ import { Component } from '@angular/core';
         المستودع الرقمي
       </h1>
 
-      <p class="text-sm sm:text-lg lg:text-xl leading-7.5 font-normal">
+      <p class="text-sm sm:text-lg lg:text-xl leading-5 font-normal">
         المستودع الرقمي هو منصة تقدم طريقة آمنة وفعالة لتخزين وإدارة المستندات الرقمية.
       </p>
     </header>

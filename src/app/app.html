@@ -1,7 +1,11 @@
-<main aria-label="Main App" role="main" class="w-full  bg-bg-light overflow-hidden ">
+
   <app-verification-link/>
   <app-header />
+
+  <main aria-label="Main App" role="main" 
+  class="flex flex-col min-h-svh w-full  bg-bg-light overflow-hidden ">
   <router-outlet />
+  </main>
+  
   <app-nav-responsive class="md:hidden"/>
   <app-footer />
-</main>
